@@ -1,5 +1,4 @@
-# Fiche d'exercices
-**Chapitre A.1 - Ecriture binaire**
+# Fiche d'exercices - **Chapitre A.1 - Ecriture binaire**
 
 ## Exercice 1
 Ecrire la représentation décimale des valeurs suivantes : 

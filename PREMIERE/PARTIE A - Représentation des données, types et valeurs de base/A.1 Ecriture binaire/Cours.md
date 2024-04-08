@@ -8,7 +8,7 @@ La représentation des nombres en base 10 est une somme de puissance de 10.
 
 **Exemple :**
 
-$1243 = 1000+200+40+3 ^1
+$1243 = 1000+200+40+3 ^1 $
 
 $= 10^3+2\times10^2+4\times10^4+3\times10^0$
 
@@ -17,7 +17,7 @@ En informatique, il n'est pas possible de représenter 10 chiffres. En effet, il
 
 Il faut donc trouver une une représentation qui ne contient que deux chiffres. Cette représentation **en base 2** est appelé **écriture binaire**.
 
-> Pour différencier la base utilisé pour la représentation d'une valeur, on écrira la base utilisé en indice après la représentation
+> Pour différentier différente représentation d'une valeur, on utilise en indice la base utilisé :
 >
 >**Exemple :**
 >
@@ -64,39 +64,39 @@ On garde l'ensemble des restes du dernier jusqu'au premier, par conséquent : $(
 **Exemple :**  
 On souhaite obtenir la représentation en base 2 de $(35)_{10}$
 
-Pour obtenir la représentation en base 2, dans un premier temps, on écrit le tableau des puissance de deux, du plus grand au plus petit.
-
+>Pour obtenir la représentation en base 2, dans un premier temps, on écrit le tableau des puissance de deux, du plus grand au plus petit.
+>
 >|1024|512|256|128|64|32|16|8|4|2|1|
 >|----|---|---|---|--|--|--|-|-|-|-|
 >|    |   |   |   |  |  |  | | | | |
-
-On place un 1 sous la plus grande valeur inférieur à notre nombre : 
-
->|1024|512|256|128|64|32|16|8|4|2|1|
->|----|---|---|---|--|--|--|-|-|-|-|
->|    |   |   |   |  | 1|  | | | | |
-
-On soustrait la valeur au nombre initial : 
->$35 - 32 = 3$
-
-On recommence avec la nouvelle valeur jusqu'à ce que celle ci soit égal à 0
-
->|1024|512|256|128|64|32|16|8|4|2|1|
->|----|---|---|---|--|--|--|-|-|-|-|
->|    |   |   |   |  | 1|  | | |1| |  
-
->$3-2 = 1$  
-
->|1024|512|256|128|64|32|16|8|4|2|1|
->|----|---|---|---|--|--|--|-|-|-|-|
->|    |   |   |   |  | 1|  | | |1|1|
-
->$1-1=0$
-
-On place un 0 dans toutes les cases vides :
->|1024|512|256|128|64|32|16|8|4|2|1|
->|----|---|---|---|--|--|--|-|-|-|-|
->|  0 | 0 | 0 | 0 | 0| 1| 0|0|0|1|1|
+>
+> On place un 1 sous la plus grande valeur inférieur à notre nombre : 
+>
+>>|1024|512|256|128|64|32|16|8|4|2|1|
+>>|----|---|---|---|--|--|--|-|-|-|-|
+>>|    |   |   |   |  | 1|  | | | | |
+>>
+>> On soustrait la valeur au nombre initial : 
+>> $35 - 32 = 3$
+>
+> On recommence avec la nouvelle valeur jusqu'à ce que celle ci soit égal à 0
+>
+>>|1024|512|256|128|64|32|16|8|4|2|1|
+>>|----|---|---|---|--|--|--|-|-|-|-|
+>>|    |   |   |   |  | 1|  | | |1| |  
+>>
+>>$3-2 = 1$  
+> 
+>>|1024|512|256|128|64|32|16|8|4|2|1|
+>>|----|---|---|---|--|--|--|-|-|-|-|
+>>|    |   |   |   |  | 1|  | | |1|1|
+>>
+>>$1-1=0$
+>
+>On place un 0 dans toutes les cases vides :
+>>|1024|512|256|128|64|32|16|8|4|2|1|
+>>|----|---|---|---|--|--|--|-|-|-|-|
+>>|  0 | 0 | 0 | 0 | 0| 1| 0|0|0|1|1|
 
 On obtient la représentation binaire :
 
@@ -110,7 +110,7 @@ $(35)_{10} = (100011)_2$
 - Dans un nombre écrit en binaire, le bit le plus à gauche est appelé **bit de poid fort**.
 - Dans un nombre écrit en binaire, le bit le plus à droite est appelé **bit de poid faible**.
 
-![Definition](definition.png)
+![Definition](./media/definition.png)
 
 En dehors de l'octet, l'ordinateur et capable de manipuler des valeurs composé de groupement de bits plus important.
 - Un groupement de 2 octet (16 bits) est appelé **word**.
@@ -143,7 +143,8 @@ le mebioctet (Mio), le gibioctet (Gio) et le tebioctet (Tio).
 |$1$ Tio| $1 024$ Go| $2^{40}$ octets|
 
 >Certains systèmes d’exploitation et logiciels n’affichent pas correctement les quantités de données.
->![Confusion](confusion_ko_kio.png)
+
+>![Confusion](./media/confusion_ko_kio.png)
 >**Exemple :** Ici, WINDOWS affiche le préfixe Go alors que les tailles affichés correspond à des Gio. Cela entraine un décalage entre les valeurs affichés et les valeurs réélles.
 
 ## IV. Calcul sur les nombres binaires
