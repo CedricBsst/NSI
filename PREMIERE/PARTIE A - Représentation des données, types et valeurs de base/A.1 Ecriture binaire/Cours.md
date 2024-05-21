@@ -17,7 +17,7 @@ En informatique, il n'est pas possible de représenter 10 chiffres. En effet, il
 
 Il faut donc trouver une une représentation qui ne contient que deux chiffres. Cette représentation **en base 2** est appelé **écriture binaire**.
 
-> Pour différentier différente représentation d'une valeur, on utilise en indice la base utilisé :
+> Pour différencier les différentes représentation d'une valeur, on ajoute en indice la base utilisé :
 >
 >**Exemple :**
 >
@@ -105,10 +105,10 @@ $(35)_{10} = (100011)_2$
 ## III. Evaluer la quantité de données
 ### A. Définition :
 
-- Un **bit** (BInary digiT) correspond à un chiffre binaire.
-- Un **octet** est un paquet de 8 bits.
-- Dans un nombre écrit en binaire, le bit le plus à gauche est appelé **bit de poid fort**.
-- Dans un nombre écrit en binaire, le bit le plus à droite est appelé **bit de poid faible**.
+- Un **bit** (BInary digiT) <span class="caché">correspond à un chiffre binaire.</span>
+- Un **octet**  <span class="caché">est un paquet de 8 bits.</span>
+- Dans un nombre écrit en binaire, le bit le plus <span class="caché"> à gauche </span> est appelé **bit de poid fort**.
+- Dans un nombre écrit en binaire, le bit le plus <span class="caché"> à droite est appelé **bit de poid faible**.
 
 ![Definition](./media/definition.png)
 
@@ -118,7 +118,7 @@ En dehors de l'octet, l'ordinateur et capable de manipuler des valeurs composé 
 - Un groupement de 8 octet (64 bits) est appelé **quad word**.
 
 ### B. Multiple de l'octet
-Pour de grande quantité de donnée, on construit le kilo-octet(ko), megaoctet(Mo), le gigaoctet(Go) et le terraoctet (To) à partie de l'octet.
+Pour de grande quantité de donnée, on construit le <span class="caché">kilo-octet</span>(ko), <span class="caché">megaoctet</span>(Mo), le <span class="caché">gigaoctet</span>(Go) et le <span class="caché"> terraoctet</span> (To) à partie de l'octet.
 
 Historiquement, on considérait qu’un ko correspondait à 1024 octets (2
 10), mais cette représentation violait les normes
