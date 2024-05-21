@@ -17,7 +17,7 @@ En informatique, il n'est pas possible de représenter 10 chiffres. En effet, il
 
 Il faut donc trouver une une représentation qui ne contient que deux chiffres. Cette représentation **en base 2** est appelé **écriture binaire**.
 
-> Pour différencier les différentes représentation d'une valeur, on ajoute en indice la base utilisé :
+> Pour différencier les différentes représentation d'une valeur, on ajoute en indice la base utilisée :
 >
 >**Exemple :**
 >
