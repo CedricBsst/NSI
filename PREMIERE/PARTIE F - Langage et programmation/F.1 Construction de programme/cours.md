@@ -48,7 +48,7 @@ Un **environnement de développement** est un logiciel permettant d'écrire du c
 |-|-|
 |```int```|<span class="caché">Entier</span>|
 |```float```|<span class="caché">Nombre à virgule </span>(Flottant)|
-|```bool```|<span class="caché">Booléen</span>(Deux valeurs ```True``` (Vrai) ```False```(Faux))|
+|```bool```|<span class="caché">Booléen</span>(Deux valeurs ```True``` (Vrai) ```False``` (Faux))|
 |```str```|<span class="caché">Chaînes de caractères</span>|
 
 La fonction python ```type``` permet de connaître le type d'une expression.  

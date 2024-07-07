@@ -217,6 +217,10 @@ Pour résoudre ce problème, on utilise la base 16 (ou hexadécimale). Un nombre
 Pour passer de la représentation en binaire d'une valeur à sa représentation en hexadécimale, on regroupe les bits par paquets de 4 et on converti chaque paquet un à un.
 
 **Exemple :**
+
+On souhaite obtenir l'écriture hexadécimale de la valeur binaire : 
+
+$10110100$
 |1011|0100|
 |-|-|
 |B|4|
