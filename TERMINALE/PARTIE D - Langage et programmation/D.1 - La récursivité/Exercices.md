@@ -1,4 +1,4 @@
-# Fiche d'exercices - **Chapitre F.1 - La récursivité**
+# Fiche d'exercices - **Chapitre D.1 - La récursivité**
 ## Exercice 1
 Pour chacune des fonctions suivantes, determiner s'il s'agit d'une fonction récursive ou non. Si oui, entourer le(s) cas de base. 
 > ⚠ Les fonctions 4 et 5 sont liées

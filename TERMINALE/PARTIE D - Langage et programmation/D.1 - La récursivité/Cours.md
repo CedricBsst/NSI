@@ -1,4 +1,4 @@
-# Chapitre F.1 : La récursivité
+# Chapitre D.1 : La récursivité
 ## I. Introduction
 Un algorithme récursif <span class="caché">est un algorithme qui obtient une solution en calculant des solutions plus petites du même problème.</span>
 
