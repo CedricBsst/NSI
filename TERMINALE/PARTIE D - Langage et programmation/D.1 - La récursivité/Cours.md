@@ -25,7 +25,7 @@ Pour s'assurer qu'une fonction récursive soit correctement écrit, il faut vér
 >   if n <= 1: 
 >       return 1
 >   else:
->       return fact(n-1)
+>       return fact(n-1)*n
 >```
 > - **Surligner le(s) cas de base**
 > - **Entourer le(s) appel(s) récursif(s)**
