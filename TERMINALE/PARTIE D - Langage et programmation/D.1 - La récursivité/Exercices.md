@@ -10,7 +10,7 @@ def rebours(n):
         rebours(n-1)
     else:
         print("FIN")
-```|
+```
 
 2. ```u```
 ```python
