@@ -2,11 +2,11 @@
 ## I. Introduction
 Un algorithme récursif <span class="caché">est un algorithme qui obtient une solution en calculant des solutions plus petites du même problème.</span>
 
-Une fonction récursive <span class="caché">est une fonction qui est susceptible de faire appel à elle-même au cours de son exècution.</span>
+Une fonction récursive <span class="caché">est une fonction qui est susceptible de faire appel à elle-même au cours de son exécution.</span>
 
 L'approche récursive d'un problème est un concept de base en algorithmie
 
-## II. Caractèristiques d'une fonction récursive
+## II. Caractéristiques d'une fonction récursive
 Pour s'assurer qu'une fonction récursive soit correctement écrit, il faut vérifier qu'elle s'arrête dans tous les cas. Pour cela, il faut respecter deux règles : 
 - Dans une fonction récursive, il faut au moins un cas dans lequel <span class="caché">il n'y a pas d'appel récursif</span>. Ce cas est appelé <span class="caché">le cas de base</span>.
 - Chaque appel récursif doit se faire avec des données qui permettent de <span class="caché">s'approcher d'une situation de terminaison</span>. C'est à dire du <span class="caché">cas de base</span>
@@ -34,10 +34,10 @@ Pour vérifier qu’une fonction récursive s’arrête, il faut comme dans le c
 
 Par exemple, dans le cas de notre fonction ```fact(n)```, <span class="caché"> $u_{n+1} = u_{n}-1$ représente la suite des paramètres envoyés pour chaque appel à la fonction. Il s’agit d’une suite strictement décroissante d’entier positif. Elle atteindra donc dans tout les cas la valeur 1 correspondant au cas de base.</span>
 
-## III. Pile d'exècution
+## III. Pile d'exécution
 Dans un programme, lors de l’appel d’une fonction, l’environnement de cette fonction est mis dans un
 espace mémoire particulier qui s’appelle la pile d’exécution. **Cet espace est limité, ce qui signifie que le nombre de fonction qui peuvent s’exécuter en même temps possède une limite à ne pas dépasser.** De plus cet espace réservé à l’exécution des fonctions fonctionne comme une pile : une fonction appelante ne pourra pas libérer sa place dans la pile tant que les fonctions appelé n’ont pas été fermée.
-> **Exemple de l'évolution de la pile d'exècution avec la fonction ```fact(n)```**
+> **Exemple de l'évolution de la pile d'exécution avec la fonction ```fact(n)```**
 >
 > On appelle ```fact(4)```
 > |appel|renvoie|
@@ -65,20 +65,20 @@ espace mémoire particulier qui s’appelle la pile d’exécution. **Cet espace
 > |fact(3)||
 > |fact(4)||
 >
-> L'appel de ```fact(1)``` est terminé, on reprend l'exècution de ```fact(2)```. Cet appel renvoie la valeur 2.
+> L'appel de ```fact(1)``` est terminé, on reprend l'exécution de ```fact(2)```. Cet appel renvoie la valeur 2.
 > |appel|renvoie|
 > |-|-|
 > |fact(2)|2|
 > |fact(3)||
 > |fact(4)||
 >
-> L'appel de ```fact(2)``` est terminé, on reprend l'exècution de ```fact(3)```. Cet appel renvoie la valeur 6.
+> L'appel de ```fact(2)``` est terminé, on reprend l'exécution de ```fact(3)```. Cet appel renvoie la valeur 6.
 > |appel|renvoie|
 > |-|-|
 > |fact(3)|6|
 > |fact(4)||
 >
-> L'appel de ```fact(3)``` est terminé, on reprend l'exècution de ```fact(4)```. Cet appel renvoie la valeur 24.
+> L'appel de ```fact(3)``` est terminé, on reprend l'exécution de ```fact(4)```. Cet appel renvoie la valeur 24.
 > |appel|renvoie|
 > |-|-|
 > |fact(4)|24|
