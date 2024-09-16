@@ -54,7 +54,7 @@ Deux relations modélisent la flotte de voitures d'un réseau de locations de vo
 |-|-|-|-|-|-|
 |1|Renault|Clio|12000|Rouge|2|
 |2|Peugeot|205|22000|Noir|3|
-|Toyota|Yaris|33000|Noir|3|
+|3|Toyota|Yaris|33000|Noir|3|
 
 **agences**
 |id_agence|ville|département|
