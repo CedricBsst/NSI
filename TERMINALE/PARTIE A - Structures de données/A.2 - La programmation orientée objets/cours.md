@@ -104,11 +104,15 @@ class Rectangle:
 Pour respecter les principes de la programmation orientée objets, il est important d’imaginer les objets comme des boites avec lesquels on ne peut interagir qu’en utilisant les méthodes de la classe.
 
 En respectant ce principe, il est impossible de modifier une valeur sans échapper aux contrôles prévus par le développeur de la classe et ainsi éviter tout risques d’erreur liés à la modification d’un attribut qui ne devait pas l’être.
+
 ![encapsulation](./media/poo_encapsulation.png)
+
 Pour être certain que l’utilisateur de la classe respecte ce principe, il faut lui interdire l’accès aux attributs en dehors des méthodes de la classe. Pour ce faire, il faut rendre les attributs privés. Ainsi, l’utilisateur de la classe n’y aura pas accès.
 
 En python, pour rendre un attribut privé, on ajoute deux underscores (_) devant le nom de l’attribut.
+
 ![attr_prive](./media/poo_attr_prive.png)
+
 Il devient alors impossible d’accéder à notre attribut en dehors de la classe. Il devient en revanche nécessaire de créer des méthodes pour permettre à l’utilisateur de modifier les attributs de la classe
 
 Ces méthodes sont les accesseurs (permettent de lire la valeur des attributs) et les mutateurs (permettent de modifier la valeur des attributs) 
