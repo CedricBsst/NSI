@@ -43,7 +43,7 @@ Comme vous avez pu le remarquer, chaque balise ouverte ```<balise>``` est associ
 ```html
 <p> J'écris un paragraphe </p>
 ```
-La balise ouvrante ```<p>``` permet de définir que ce qui va suivre sera un paragraphe, elle est associé à une balise fermante ```<\p>``` qui indique que le paragraphe est terminé.
+La balise ouvrante ```<p>``` permet de définir que ce qui va suivre sera un paragraphe, elle est associé à une balise fermante ```</p>``` qui indique que le paragraphe est terminé.
 
 Il est possible d'imbriquer les balises les unes dans les autres lorsque cela est nécessaire, il faut cependant vérifier à fermer les balises dans le bonne ordre.
 
