@@ -8,7 +8,7 @@ Le langage SQL est un langage déclaratif, cela signifie qu'il permet de décrir
 L’ensemble des Système de Gestion de Bases de Données embarque un optimiseur de requêtes. Cela signifie que **deux requêtes attendant le même résultat, iront toujours à la même vitesse** pour s’exécuter indépendamment de la façon dont elle est écrite.
 
 ## II. Écrire une requête de sélection
-Dans ce cours, pour utiliser des requêtes SQL, nous utiliserons le site : https://sqlite.com/
+Dans ce cours, pour utiliser des requêtes SQL, nous utiliserons le site : https://sqliteonline.com/
 
 Celui-ci permet d'importer ou de créer un fichier permettant de sauvegarder le contenu d'une base de données. Ceci nous permettra de réaliser des requêtes sans devoir installer et utiliser un serveur de bases de donnés.
 
