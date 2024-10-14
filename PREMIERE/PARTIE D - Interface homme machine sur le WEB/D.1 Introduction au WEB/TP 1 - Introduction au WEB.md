@@ -312,3 +312,84 @@ Il existe deux balises permettant de faire des listes, ```<ul>``` et ```<ol>```.
 > ```
 
 ### B. Le langage CSS
+Le langage CSS (Cascading Style Sheet - _Feuille de style en cascade_) est un langage permettant de modifier l'apparence d'une page WEB, de faire le design de la page.
+
+Dans un premier temps, il faut créer notre feuille de style et l'appliquer à notre fichier.
+> **QUESTION 17 :**
+>
+> Créer un fichier ```style.css``` dans le même dossier que votre fichier ```html```.
+> Dans votre fichier ```html```, dans votre ```head```, ajouter la ligne de code suivante :
+> ```html
+> <link href = "style.css" rel="stylesheet">
+> ```
+> C'est cette ligne qui permet de lier votre feuille de style avec votre fichier HTML.
+
+Pour ajouter des propriétés (couleur, taille police...) aux éléments de notre page, il faut dans un premier temps sélectionner les éléments auxquels vont s'appliquer nos propriétés.
+
+#### Les sélecteurs CSS
+Les sélecteurs CSS sont les éléments qui permettent de choisir les balises de notre document qui seront affectés. Il existe trois style de sélecteur :
+- La première façon de sélectionner des balises consiste simplement à écrire le nom de la balise concerné :
+    - ```p``` sélectionnera toutes les balises de type paragraphes
+    - ```h1``` sélectionnera toutes les balises de type titre de niveau  1  
+    Il est possible d'écrire plusieurs balises à la suite pour faire une sélection plus précise. Par exemple :
+    - ```header a``` sélectionnera tous les liens (balise ```a```) qui se situe dans le haut du document (balise ```header```)
+
+- La seconde façon de sélectionner des balise consiste à appliquer d'ajouter un attribut ```class``` au éléments HTMl concernés comme ci-dessous :
+```html
+<p class="rouge">texte</p>
+```
+Cette méthode permet de sélectionner un groupe d'élément plus précis. Pour l'utiliser, on ajoute écrit un point suivi de la valeur de l'attribut ```class``` : ```.rouge```
+
+- La seconde façon de sélectionner des balise consiste à appliquer d'ajouter un attribut ```id``` à l'élément HTML concerné comme ci-dessous :
+```html 
+<p id="rouge">texte</p>
+```
+Cette méthode permet de sélectionner une balise unique. Pour l'utiliser, on écrit un dièse suivi de la valeur de l'attribut ```id``` : ```#rouge```
+
+#### Ajouter des propriétés CSS
+Une fois notre sélecteur CSS écrit, on ajoute des accolades ```{}```. C'est entre ces deux accolades que l'on ajoute les propriétés CSS. **Chaque propriétés CSS s'écrit sous la forme suivante :**
+```nom_de_la_propriété: valeur;```
+
+Par exemple, le code suivant permet d'écrire tous les titres de niveau 1 en rouge :
+```css
+h1{
+    color: red;
+}
+```
+
+> **Question 18**
+>
+> Recopier le code CSS ci-dessus dans votre fichier CSS et observer le résultats.
+
+> **Question 19**
+>
+> Modifier votre fichier CSS afin d'y mettre les titres de niveau 2 en vert.
+
+La propriété text-decoration permet d'ajouter de la décoration au texte (souligné, barré, gras, italique ...). 
+Appliquée a cette propriétés, la valeur underline permet de souligné le textes.
+
+> **Question 20**
+>
+> Modifier votre fichier CSS afin de souligner les éléments important (balise ```strong```).
+
+Les propriétés ```width``` et ```height``` permettent de modifier respectivement la largeur et la hauteur des éléments.
+
+Les valeurs peuvent être noté en pixel ```150px``` ou en pourcentage de la page ```20%```.
+
+> **Question 21**
+>
+> Modifier votre fichier CSS pour adapter la taille de vos images à votre page WEB.
+
+La propriété border permet d'ajouter des bordures aux éléments HTML.
+
+> **QUESTION 22**
+>
+> Ajouter la propriété ```border: solid black``` aux éléments de type titre de niveau 1.
+
+https://www.pixelcrea.com/ressources/memo-css3.pdf
+
+> **QUESTION 23**
+>
+> Le lien précédent contient un memo CSS. 
+> 
+> Lisez le document et utilisez le pour rendre votre page la plus attractive possible. Vous pouvez effectuer des recherches sur le WEB si vous souhaitez faire des modifications particulière.
