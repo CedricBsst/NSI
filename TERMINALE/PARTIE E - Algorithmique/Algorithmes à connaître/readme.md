@@ -8,3 +8,9 @@ Dans ce dossier, vous trouverez l'ensemble des algorithmes vus en première et e
 - Tris :
     - [Tri par sélection](./tri_selection.py)
     - [Tri par insertion](./tri_insertion.py)
+## [Algorithmes gloutons](./glouton.ipynb)
+
+# Algorithmes du programme de terminale :
+## Algorithmes sur les arbres 
+- [Taille d'un arbre binaire](../E.1%20-%20Algorithmes%20sur%20les%20arbres/taille.py)
+- [Hauteur d'un arbre binaire](../E.1%20-%20Algorithmes%20sur%20les%20arbres/hauteur.py)
