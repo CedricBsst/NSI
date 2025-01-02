@@ -4,12 +4,13 @@
 Une **structure de données** est une manière d'organiser des données ayant pour objectif de traiter les données plus facilement.
 
 Chaque structure de données est à envisager sous deux aspect :
+
 - Son **interface** : <span class="caché"> L'interface est destiné à l'utilisateur de la structure de données, elle contient la *spécification* des méthodes que l'on peut appliquer à cette structure de données. </span>
 - Son **implémentation** : <span class="caché">L'implémentation est une mise en œuvre pratique de la structure de données dans un langage de programmation.</span>
 
 Par exemple, dans une voiture, les pédales et le volants constituent une partie de l'interface de la voiture. Tandis que l'implémentation correspondra plutôt aux mécanismes qui permettent à la voitures d'avancer, de freiner, de tourner etc...
 
-Ainsi, il n'est pas necessaire pour l'utilisateur d'une structure de données de connaître son implémentation pour pouvoir l'utiliser. Seul son interface est necessaire.
+Ainsi, il n'est pas nécessaire pour l'utilisateur d'une structure de données de connaître son implémentation pour pouvoir l'utiliser. Seul son interface est nécessaire.
 
 ## II. Les listes (```list``` en python)
 Une liste est <span class="caché"> un ensemble d'élément ordonnés</span>. La liste est une structure de données qui existe dans une grande majorité des langages de programmation.
