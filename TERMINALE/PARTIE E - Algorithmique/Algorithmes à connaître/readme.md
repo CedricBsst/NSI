@@ -14,3 +14,6 @@ Dans ce dossier, vous trouverez l'ensemble des algorithmes vus en première et e
 ## Algorithmes sur les arbres 
 - [Taille d'un arbre binaire](../E.1%20-%20Algorithmes%20sur%20les%20arbres/taille.py)
 - [Hauteur d'un arbre binaire](../E.1%20-%20Algorithmes%20sur%20les%20arbres/hauteur.py)
+
+## Algorithmes diviser pour régner
+- [Tri fusion](../E.2%20-%20Méthode%20diviser%20pour%20régner/tri_fusion.py)
