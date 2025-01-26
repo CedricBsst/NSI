@@ -19,6 +19,9 @@ class arbre_binaire:
     def set_sag(self, gauche):
         self.sag = gauche
 
+    def set_racine(self, racine):
+        self.racine = racine
+
 n10 = arbre_binaire(10, None, None)
 n13 = arbre_binaire(13, None, None)
 n17 = arbre_binaire(17, None, None)
@@ -69,6 +72,7 @@ def recherche (v,arbre):
     
     if v == arbre.get_racine() :
         return True
+    
 def ajouter(v,arbre):
     if v > arbre.get_racine():
         if arbre.get_sad() == None:
@@ -83,5 +87,21 @@ def ajouter(v,arbre):
             ajouter(v,arbre.get_sag())
 ajouter(100,a)
         
+def supprimer(v, arbre):
+    if arbre == None:
+        return None
+    if v < arbre.get_racine():
+        arbre.set_sag(supprimer(v, arbre.get_sag()))
+    elif v > arbre.get_racine():
+        arbre.set_sad(supprimer(v, arbre.get_sad()))
+    else:
+        if arbre.get_sag() == None:
+            return arbre.get_sad()
+        elif arbre.get_sad() == None:
+            return arbre.get_sag()
+        else:
+            arbre.set_racine(mini(arbre.get_sad()))
+            arbre.set_sad(supprimer(mini(arbre.get_sad()), arbre.get_sad()))
+    return arbre
     
-    
+supprimer(15,a)
