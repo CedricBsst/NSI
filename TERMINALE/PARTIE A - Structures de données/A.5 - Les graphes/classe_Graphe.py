@@ -1,6 +1,6 @@
 class Graphe:
     def __init__(self):
-        listes_adjacences = {}
+        self.listes_adjacences = {}
     
     def ajouter_sommet(self, sommet):
         if sommet not in self.listes_adjacences:
