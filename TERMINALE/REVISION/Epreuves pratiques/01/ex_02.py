@@ -1,0 +1,13 @@
+def distance_carre(p1, p2):
+    '''calcul et renvoie le carrée de la distance entre les deux points p1 et p2'''
+    return (...)**2 + (...)**2
+
+def point_le_plus_proche(dep, tab):
+    ''' Renvoie les coordonnées du point dans tab ayant la plus courte distance avec le point dep.'''
+    min_points = tab[0]
+    min_dist = ...
+    for i in range(1, len(tab)):
+        if ... < min_dist:
+            min_point = ...
+            min_dist = ...
+    return ...
