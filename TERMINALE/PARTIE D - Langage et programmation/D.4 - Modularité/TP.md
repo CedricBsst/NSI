@@ -51,9 +51,9 @@ url = f'https://api-adresse.data.gouv.fr/search/?q={adresse}&postcode={code_post
 ### ETAPE 3 : Envoyer la requête et récupérer la réponse
 ```python
     try:
-        reponse = urllib.request.urlopen(url, method="GET")
+        reponse = urllib.request.urlopen(url)
         data = json.load(reponse)
-    except Exception as e
+    except Exception as e:
         print("Erreur lors de la requête :", e)
         data = None
 ```
