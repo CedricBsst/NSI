@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculatrice</title>
+  <link rel="stylesheet" href="calc.css" />
+</head>
+<body>
+
+  <div class="calculatrice">
+    <div class="ecran" id="ecran"></div>
+    <div class="boutons">
+      <button onclick="ajouter('7')">7</button>
+      <button onclick="ajouter('8')">8</button>
+      <button onclick="ajouter('9')">9</button>
+      <button onclick="ajouter_operateur('/')">÷</button>
+
+      <button onclick="ajouter('4')">4</button>
+      <button onclick="ajouter('5')">5</button>
+      <button onclick="ajouter('6')">6</button>
+      <button onclick="ajouter_operateur('*')">×</button>
+
+      <button onclick="ajouter('1')">1</button>
+      <button onclick="ajouter('2')">2</button>
+      <button onclick="ajouter('3')">3</button>
+      <button onclick="ajouter_operateur('-')">−</button>
+
+      <button onclick="ajouter('0')">0</button>
+      <button onclick="ajouter('.')">.</button>
+      <button class="egal" onclick="calculer()">=</button>
+      <button onclick="ajouter_operateur('+')">+</button>
+
+      <button class="reset" onclick="reset()">C</button>
+    </div>
+  </div>
+
+  <script>
+    let ecran = document.getElementById("ecran");
+    let v1 = null;
+    let v2 = null;
+    let operateur = "";
+
+    function ajouter(val) {
+        if (ecran.innerHTML == ""){
+            ecran.innerHTML = ...; // initialiser l'écran avec la première valeur
+        }
+        else{
+            ecran.innerHTML += ...; // ajouter la valeur à l'écran
+        }
+    }
+
+    function ajouter_operateur(op) {
+        if (ecran.innerHTML != ""){
+            v1 = parseFloat(ecran.innerHTML); // convertir l'affichage en nombre
+            operateur = ...; // stocker l'opérateur
+            ecran.innrerHTML = ...; // effacer l'écran pour la prochaine valeur
+        }
+    }
+
+
+    function calculer() {
+        if (v1 != null && operateur != "" && ecran.innerHTML != "") {
+            v2 = parseFloat(ecran.innerHTML); // convertir l'affichage en nombre
+            if (operateur == '+'){
+                ecran.innerHTML = v1 + v2; // additionner les deux valeurs
+            }
+            else if (operateur == '-'){
+                ecran.innerHTML = ...; //Soustraction
+            }
+            else if (operateur == '*'){
+                ecran.innerHTML = ...; //Multiplication
+            }
+            else if (operateur == '/'){
+                if (v2 === 0) {
+                    ecran.innerHTML = ...; //Gestion de la division par zéro
+                } else {
+                    ecran.innerHTML = ...; //Division
+                }
+            }
+            v1 = null;
+            v2 = null;
+            operateur = "";
+
+        }
+    }
+
+    function reset() {
+      ecran.innerHTML = ...; // Réinitialiser l'écran
+      v1 = null;
+      v2 = null;
+      operateur = "";
+    }
+  </script>
+
+</body>
+</html>
+<!--
+# TODO : Améliorer la calculatrice
+## Objectif
+✅ Étape 1 – Affichage
+[ ] Ajouter un "0" par défaut à l'écran au lancement
+[ ] Éviter les nombres comme 003 en supprimant les zéros initiaux inutiles
+[ ] Afficher le calcul en cours au dessus de l'écran
+[ ] Arrondir le résultat à 2 décimales
+💡 Piste : resultat.toFixed(2) ou Math.round(... * 100) / 100
+
+✅ Étape 2 – Boutons
+[ ] Empêcher d’entrer plusieurs points (.) dans le même nombre
+[ ] Ajouter un bouton "<--" pour supprimer le dernier caractère de l'écran
+[ ] Ajouter un bouton % pour le modulo (reste de la division entière)
+[ ] Ajouter un bouton racine carrée (√) pour calculer la racine carrée d’un nombre
+[ ] Ajouter un bouton pour inverser le signe du nombre (changer de positif à négatif et vice versa)
+
+✅ Étape 3 – Saisie au clavier
+[ ] Permettre la saisie des nombres et opérateurs avec le clavier
+[ ] Afficher un message d’erreur si l’utilisateur appuie sur une touche non valide
+
+//Le script ci-dessous affiche le nom et le code de la touche appuyée pour vous aider à la saisie au clavier
+<script>
+document.addEventListener('keydown', (event) => {
+    var name = event.key;
+    var code = event.code;
+    alert("Le Nom de la touche appuyée est " + name + ", son code est: " + code);
+}, false);
+</script>
+
+-->
